@@ -1,0 +1,33 @@
+buildscript {
+    ext.kotlin_version = '1.0.1-2'
+    repositories {
+        mavenCentral()
+
+        maven {
+            url uri(System.getenv("MOE_HOME") + "/gradle")
+        }
+    }
+    dependencies {
+        classpath 'org.moe.gradle:moeGradlePlugin:1.1.+'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'moe'
+apply plugin: 'kotlin'
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile project(':common')
+}
+
+moe {
+    xcode {
+        mainTarget 'KotlinRssReader'
+        companyIdentifier 'org.moe'
+        packageName 'org.moe.kotlinrssreader'
+        appIconsSource 'AppIcon'
+        deploymentTarget '9.3'
+    }
+}
