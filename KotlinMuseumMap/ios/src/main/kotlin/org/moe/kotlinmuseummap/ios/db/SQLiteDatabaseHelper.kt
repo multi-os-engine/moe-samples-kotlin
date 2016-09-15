@@ -7,9 +7,9 @@ import org.moe.kotlinmuseummap.common.core.Utils
 import org.moe.kotlinmuseummap.common.database.ISQLiteDatabase
 import org.moe.kotlinmuseummap.common.database.ISQLiteDatabaseHelper
 import org.moe.kotlinmuseummap.common.model.entities.MuseumEntity
-import ios.foundation.c.Foundation
-import ios.foundation.enums.NSSearchPathDirectory
-import ios.foundation.enums.NSSearchPathDomainMask
+import apple.foundation.c.Foundation
+import apple.foundation.enums.NSSearchPathDirectory
+import apple.foundation.enums.NSSearchPathDomainMask
 import org.sqlite.c.Globals
 import java.io.File
 import java.io.IOException

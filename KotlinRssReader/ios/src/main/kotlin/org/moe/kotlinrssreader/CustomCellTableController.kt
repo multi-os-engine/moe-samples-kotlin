@@ -30,10 +30,10 @@
 package org.moe.kotlinrssreader
 
 import org.moe.natj.general.Pointer
-import ios.foundation.NSIndexPath
-import ios.uikit.UITableView
-import ios.uikit.UITableViewCell
-import ios.uikit.UITableViewController
+import apple.foundation.NSIndexPath
+import apple.uikit.UITableView
+import apple.uikit.UITableViewCell
+import apple.uikit.UITableViewController
 import java.util.*
 
 abstract class CustomCellTableController protected constructor(peer: Pointer) : UITableViewController(peer) {

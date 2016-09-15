@@ -7,21 +7,21 @@ import org.moe.kotlinmuseummap.common.MuseumSearchEngine
 import org.moe.kotlinmuseummap.common.model.Museum
 import org.moe.kotlinmuseummap.common.model.db.DataSource
 import org.moe.kotlinmuseummap.ios.db.SQLiteDatabaseHelper
-import ios.c.Globals
-import ios.corelocation.struct.CLLocationCoordinate2D
-import ios.foundation.NSArray
-import ios.foundation.NSDictionary
-import ios.foundation.NSMutableArray
-import ios.foundation.NSMutableDictionary
-import ios.mapkit.MKAnnotationView
-import ios.mapkit.MKMapView
-import ios.mapkit.MKPinAnnotationView
-import ios.mapkit.MKPointAnnotation
-import ios.mapkit.protocol.MKAnnotation
-import ios.mapkit.protocol.MKMapViewDelegate
-import ios.uikit.*
-import ios.uikit.enums.*
-import ios.uikit.protocol.UITextFieldDelegate
+import apple.c.Globals
+import apple.corelocation.struct.CLLocationCoordinate2D
+import apple.foundation.NSArray
+import apple.foundation.NSDictionary
+import apple.foundation.NSMutableArray
+import apple.foundation.NSMutableDictionary
+import apple.mapkit.MKAnnotationView
+import apple.mapkit.MKMapView
+import apple.mapkit.MKPinAnnotationView
+import apple.mapkit.MKPointAnnotation
+import apple.mapkit.protocol.MKAnnotation
+import apple.mapkit.protocol.MKMapViewDelegate
+import apple.uikit.*
+import apple.uikit.enums.*
+import apple.uikit.protocol.UITextFieldDelegate
 
 class MuseumMapController protected constructor(peer: Pointer) : UIViewController(peer) {
 

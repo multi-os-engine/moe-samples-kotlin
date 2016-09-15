@@ -35,15 +35,15 @@ import org.moe.natj.objc.ann.Selector
 import org.moe.kotlinrssreader.common.Bookmarks
 import org.moe.kotlinrssreader.common.RSSFeed
 import org.moe.kotlinrssreader.common.RSSFeedItem
-import ios.c.Globals
-import ios.coregraphics.c.CoreGraphics
-import ios.coregraphics.struct.CGSize
-import ios.foundation.*
-import ios.foundation.struct.NSRange
-import ios.uikit.*
-import ios.uikit.c.UIKit
-import ios.uikit.enums.*
-import ios.uikit.struct.UIEdgeInsets
+import apple.c.Globals
+import apple.coregraphics.c.CoreGraphics
+import apple.coregraphics.struct.CGSize
+import apple.foundation.*
+import apple.foundation.struct.NSRange
+import apple.uikit.*
+import apple.uikit.c.UIKit
+import apple.uikit.enums.*
+import apple.uikit.struct.UIEdgeInsets
 
 class RSSReaderController protected constructor(peer: Pointer) : CustomCellTableController(peer) {
 
