@@ -1,1 +1,7 @@
 build
+.idea
+*.iml
+.project
+.classpath
+.settings
+bin
