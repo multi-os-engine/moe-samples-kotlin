@@ -1,0 +1,3 @@
+[submodule "splintersweets"]
+	path = splintersweets
+	url = https://github.com/reime005/splintersweets.git
