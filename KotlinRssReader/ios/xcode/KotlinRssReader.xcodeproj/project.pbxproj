@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B290815E966D9771B6334CC0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E643FAD70B46833648775403 /* main.cpp */; };
+		F2A9F843A6A95DC403435A91 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E643FAD70B46833648775403 /* main.cpp */; };
+		8E20F5847AE69662CC374762 /* MOE.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 19B5A27EA074E4D58BB433CC /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38734713AA68C00EE16D94E9 /* MOE.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 19B5A27EA074E4D58BB433CC /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6CB8597F0202E619405F5E70 /* MOE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B5A27EA074E4D58BB433CC /* MOE.framework */; };
+		4FDABDACB6DFFDF242989432 /* MOE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B5A27EA074E4D58BB433CC /* MOE.framework */; };
+		812965220A441547DD5DD0AB /* preregister.txt in Resources */ = {isa = PBXBuildFile; fileRef = B0EC2BF08009E364F023231B /* preregister.txt */; };
+		270BD34F168A174AB2A586A4 /* preregister.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6266C7C6DE3FD13B193E15A0 /* preregister.txt */; };
+		A40720E090906D40E7FC516D /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = 8D6D3E4E6240BBB961E3F6A2 /* application.jar */; };
+		D4C41C20C8E5108BA06A56E0 /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = 5A6351EB7ED9C4B9F4B82E9F /* application.jar */; };
+		698828DC690174DEB90BB499 /* classlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4C31F99D087C0D3426C8D97D /* classlist.txt */; };
+		39BF0CFE5E5367B3ACF70F3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D8DF04F3EBBCD2CDE355D /* LaunchScreen.xib */; };
+		1B0478C88E16D64CB6B6D301 /* RSSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5DD4476F3640A397441A83 /* RSSCell.xib */; };
+		F460F1794AD06221DD011D34 /* android_root in Resources */ = {isa = PBXBuildFile; fileRef = 4B31E9D4BC0758915B71A339 /* android_root */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9311BC6E0E0377798522FDD4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E20F5847AE69662CC374762 /* MOE.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			name = "Embed Frameworks";
+		};
+		D88B25837DFB6B3182B43211 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38734713AA68C00EE16D94E9 /* MOE.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			name = "Embed Frameworks";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E643FAD70B46833648775403 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E6ACE80B97B40943C9C170B9 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		4B0E5EE7AFA9E45CC08E7973 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		A3CB6C6F6A1EC06CD0776E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = KotlinRssReader/Info.plist; sourceTree = SOURCE_ROOT; name = Info.plist; };
+		7769AEB9E7D69C3C07D37EBF /* Info-Test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KotlinRssReader-Test/Info-Test.plist"; sourceTree = SOURCE_ROOT; name = "Info-Test.plist"; };
+		30C7980DED0E5A5879562FCF /* KotlinRssReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotlinRssReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4E2B3EEE306CCF606E674C /* KotlinRssReader-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KotlinRssReader-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B5A27EA074E4D58BB433CC /* MOE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOE.framework; sourceTree = MOE_FRAMEWORK_PATH; };
+		B0EC2BF08009E364F023231B /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ../build/moe/main/preregister.txt; sourceTree = SOURCE_ROOT; name = preregister.txt; };
+		6266C7C6DE3FD13B193E15A0 /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ../build/moe/test/preregister.txt; sourceTree = SOURCE_ROOT; name = preregister.txt; };
+		8D6D3E4E6240BBB961E3F6A2 /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = ../build/moe/main/application.jar; sourceTree = SOURCE_ROOT; name = application.jar; };
+		5A6351EB7ED9C4B9F4B82E9F /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = ../build/moe/test/application.jar; sourceTree = SOURCE_ROOT; name = application.jar; };
+		4C31F99D087C0D3426C8D97D /* classlist.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ../build/moe/test/classlist.txt; sourceTree = SOURCE_ROOT; name = classlist.txt; };
+		845D8DF04F3EBBCD2CDE355D /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ../src/main/resources/LaunchScreen.xib; sourceTree = SOURCE_ROOT; name = LaunchScreen.xib; };
+		7F5DD4476F3640A397441A83 /* RSSCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ../src/main/resources/RSSCell.xib; sourceTree = SOURCE_ROOT; name = RSSCell.xib; };
+		4B31E9D4BC0758915B71A339 /* android_root */ = {isa = PBXFileReference; lastKnownFileType = text; path = ../src/main/resources/android_root; sourceTree = SOURCE_ROOT; name = android_root; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01C1B64123E201AEAFA81DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB8597F0202E619405F5E70 /* MOE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935738DD3C3C4124E2CD49B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDABDACB6DFFDF242989432 /* MOE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFBE80AD5C87CF4A4EA601DD /* KotlinRssReader */ = {
+			isa = PBXGroup;
+			name = KotlinRssReader;
+			path = KotlinRssReader;
+			sourceTree = "<group>";
+			children = (
+				7E971FA9941177FE7B62DF05 /* Supporting Files */,
+			);
+		};
+		7E971FA9941177FE7B62DF05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+			children = (
+				E643FAD70B46833648775403 /* main.cpp */,
+				E6ACE80B97B40943C9C170B9 /* build.xcconfig */,
+				A3CB6C6F6A1EC06CD0776E5B /* Info.plist */,
+				B0EC2BF08009E364F023231B /* preregister.txt */,
+				8D6D3E4E6240BBB961E3F6A2 /* application.jar */,
+				845D8DF04F3EBBCD2CDE355D /* LaunchScreen.xib */,
+				7F5DD4476F3640A397441A83 /* RSSCell.xib */,
+				4B31E9D4BC0758915B71A339 /* android_root */,
+			);
+		};
+		69667B5CD686DA8D402B9356 /* KotlinRssReader-Test */ = {
+			isa = PBXGroup;
+			name = "KotlinRssReader-Test";
+			path = "KotlinRssReader-Test";
+			sourceTree = "<group>";
+			children = (
+				926AEAAC20B594364001A4AE /* Supporting Files */,
+			);
+		};
+		926AEAAC20B594364001A4AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+			children = (
+				4B0E5EE7AFA9E45CC08E7973 /* build.xcconfig */,
+				7769AEB9E7D69C3C07D37EBF /* Info-Test.plist */,
+				6266C7C6DE3FD13B193E15A0 /* preregister.txt */,
+				5A6351EB7ED9C4B9F4B82E9F /* application.jar */,
+				4C31F99D087C0D3426C8D97D /* classlist.txt */,
+			);
+		};
+		E07FC060744962C5F078FE96 = {
+			isa = PBXGroup;
+			sourceTree = "<group>";
+			children = (
+				CFBE80AD5C87CF4A4EA601DD /* KotlinRssReader */,
+				69667B5CD686DA8D402B9356 /* KotlinRssReader-Test */,
+				12F49B96A4A7D5A408F76E9A /* Frameworks */,
+				CB60C569520EC6060C3497D9 /* Products */,
+			);
+		};
+		CB60C569520EC6060C3497D9 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			path = Products;
+			sourceTree = "<group>";
+			children = (
+				30C7980DED0E5A5879562FCF /* KotlinRssReader.app */,
+				2D4E2B3EEE306CCF606E674C /* KotlinRssReader-Test.app */,
+			);
+		};
+		12F49B96A4A7D5A408F76E9A /* Frameworks */ = {
+			isa = PBXGroup;
+			name = Frameworks;
+			path = Frameworks;
+			sourceTree = "<group>";
+			children = (
+				19B5A27EA074E4D58BB433CC /* MOE.framework */,
+			);
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		996C8B25382D33654E1D2B91 /* KotlinRssReader */ = {
+			isa = PBXNativeTarget;
+			name = KotlinRssReader;
+			productName = KotlinRssReader;
+			productType = "com.apple.product-type.application";
+			buildConfigurationList = DD32D380FB5EB4E0AF444BA7 /* Build configuration list for PBXNativeTarget "KotlinRssReader" */;
+			buildPhases = (
+				166C6901DA07E0901653D77D /* Compile Sources (MOE) */,
+				01C1B64123E201AEAFA81DC0 /* Frameworks */,
+				2E18F7944AFE0B3F0B0E230F /* Resources */,
+				8ADB3DCBC5205AB5BC754B49 /* Sources */,
+				9311BC6E0E0377798522FDD4 /* CopyFiles */,
+			);
+			productReference = 30C7980DED0E5A5879562FCF /* KotlinRssReader.app */;
+		};
+		3E63CCFD7FA9E3E0E5152240 /* KotlinRssReader-Test */ = {
+			isa = PBXNativeTarget;
+			name = "KotlinRssReader-Test";
+			productName = "KotlinRssReader-Test";
+			productType = "com.apple.product-type.application";
+			buildConfigurationList = 845A55C3FC22AB559D0870C0 /* Build configuration list for PBXNativeTarget "KotlinRssReader-Test" */;
+			buildPhases = (
+				750507B92B619CB09D840D0C /* Compile Sources (MOE) */,
+				935738DD3C3C4124E2CD49B7 /* Frameworks */,
+				5D64501252450B214ADF9154 /* Resources */,
+				F36B8612B055BE8B5B17B81F /* Sources */,
+				D88B25837DFB6B3182B43211 /* CopyFiles */,
+			);
+			productReference = 2D4E2B3EEE306CCF606E674C /* KotlinRssReader-Test.app */;
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEDA3754B135E5A322849A1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "My Company";
+			};
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E07FC060744962C5F078FE96;
+			productRefGroup = CB60C569520EC6060C3497D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				996C8B25382D33654E1D2B91 /* KotlinRssReader */,
+				3E63CCFD7FA9E3E0E5152240 /* KotlinRssReader-Test */,
+			);
+			buildConfigurationList = CBDC7BA40324C3536D028A2E /* Build configuration list for PBXProject "KotlinRssReader" */;
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E18F7944AFE0B3F0B0E230F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812965220A441547DD5DD0AB /* preregister.txt in Resources */,
+				A40720E090906D40E7FC516D /* application.jar in Resources */,
+				39BF0CFE5E5367B3ACF70F3C /* LaunchScreen.xib in Resources */,
+				1B0478C88E16D64CB6B6D301 /* RSSCell.xib in Resources */,
+				F460F1794AD06221DD011D34 /* android_root in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D64501252450B214ADF9154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270BD34F168A174AB2A586A4 /* preregister.txt in Resources */,
+				D4C41C20C8E5108BA06A56E0 /* application.jar in Resources */,
+				698828DC690174DEB90BB499 /* classlist.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		166C6901DA07E0901653D77D /* Compile Sources (MOE) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Compile Sources (MOE)";
+			shellPath = /bin/bash;
+			shellScript = "\n# Check directories set by xcconfigs\nif [ ! -d \"$MOE_PROJECT_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_DIR' doesn't point to a directory!\"; exit 1;\nfi\nif [ ! -d \"$MOE_PROJECT_BUILD_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_BUILD_DIR' doesn't point to a directory!\"; exit 1;\nfi\n\ncd \"$MOE_PROJECT_DIR/\"\n\nexport JAVA_HOME=$(/usr/libexec/java_home -v 1.8)\njava -version\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n\tCD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n\n\techo \"Checking with 'which'\"\n\tGRADLE_EXEC=$(which 'gradle')\n\n\tif [ \"$GRADLE_EXEC\" = \"\" ]; then\n\t\techo \"Failed to locate 'gradle' executable!\"\n\t\texit 1\n\tfi\n}\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MOE_GRADLE_EXTERNAL_BUILD\" ]; then\n    findGradle\n\n    \"$GRADLE_EXEC\" --daemon moeXcodeInternal\nfi\n";
+		};
+		750507B92B619CB09D840D0C /* Compile Sources (MOE) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Compile Sources (MOE)";
+			shellPath = /bin/bash;
+			shellScript = "\n# Check directories set by xcconfigs\nif [ ! -d \"$MOE_PROJECT_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_DIR' doesn't point to a directory!\"; exit 1;\nfi\nif [ ! -d \"$MOE_PROJECT_BUILD_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_BUILD_DIR' doesn't point to a directory!\"; exit 1;\nfi\n\ncd \"$MOE_PROJECT_DIR/\"\n\nexport JAVA_HOME=$(/usr/libexec/java_home -v 1.8)\njava -version\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n\tCD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n\n\techo \"Checking with 'which'\"\n\tGRADLE_EXEC=$(which 'gradle')\n\n\tif [ \"$GRADLE_EXEC\" = \"\" ]; then\n\t\techo \"Failed to locate 'gradle' executable!\"\n\t\texit 1\n\tfi\n}\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MOE_GRADLE_EXTERNAL_BUILD\" ]; then\n    findGradle\n\n    export MOE_BUILD_SOURCE_SET=test\n    \"$GRADLE_EXEC\" --daemon moeXcodeInternal\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ADB3DCBC5205AB5BC754B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B290815E966D9771B6334CC0 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36B8612B055BE8B5B17B81F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A9F843A6A95DC403435A91 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF04B86BE5D3DE4234FF2742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				PRODUCT_NAME = KotlinRssReader;
+				STRIP_STYLE = "non-global";
+				INFOPLIST_FILE = KotlinRssReader/Info.plist;
+			};
+			baseConfigurationReference = E6ACE80B97B40943C9C170B9 /* build.xcconfig */;
+		};
+		F38F46AD6E48EF64724152D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				PRODUCT_NAME = KotlinRssReader;
+				STRIP_STYLE = "non-global";
+				INFOPLIST_FILE = KotlinRssReader/Info.plist;
+			};
+			baseConfigurationReference = E6ACE80B97B40943C9C170B9 /* build.xcconfig */;
+		};
+		201CB39F8BA3D1D724D544E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				PRODUCT_NAME = "KotlinRssReader-Test";
+				STRIP_STYLE = "non-global";
+				INFOPLIST_FILE = "KotlinRssReader-Test/Info-Test.plist";
+			};
+			baseConfigurationReference = 4B0E5EE7AFA9E45CC08E7973 /* build.xcconfig */;
+		};
+		8352490CC971573573B67D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				PRODUCT_NAME = "KotlinRssReader-Test";
+				STRIP_STYLE = "non-global";
+				INFOPLIST_FILE = "KotlinRssReader-Test/Info-Test.plist";
+			};
+			baseConfigurationReference = 4B0E5EE7AFA9E45CC08E7973 /* build.xcconfig */;
+		};
+		A6AD9F3929AE2934272C9385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${MOE_FRAMEWORK_PATH}",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SYMROOT = "$(SRCROOT)/../build/moe/xcodebuild/sym";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
+			};
+		};
+		71C2D65D9CCB7CE92C9365DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${MOE_FRAMEWORK_PATH}",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SYMROOT = "$(SRCROOT)/../build/moe/xcodebuild/sym";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD32D380FB5EB4E0AF444BA7 /* Build configuration list for PBXNativeTarget "KotlinRssReader" */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			buildConfigurations = (
+				FF04B86BE5D3DE4234FF2742 /* Debug */,
+				F38F46AD6E48EF64724152D3 /* Release */,
+			);
+		};
+		845A55C3FC22AB559D0870C0 /* Build configuration list for PBXNativeTarget "KotlinRssReader-Test" */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			buildConfigurations = (
+				201CB39F8BA3D1D724D544E7 /* Debug */,
+				8352490CC971573573B67D0B /* Release */,
+			);
+		};
+		CBDC7BA40324C3536D028A2E /* Build configuration list for PBXProject "KotlinRssReader" */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+			buildConfigurations = (
+				A6AD9F3929AE2934272C9385 /* Debug */,
+				71C2D65D9CCB7CE92C9365DC /* Release */,
+			);
+		};
+/* End XCConfigurationList section */
+	};
+	archiveVersion = 1;
+	objectVersion = 46;
+	classes = {
+	};
+	rootObject = CEDA3754B135E5A322849A1C /* Project object */;
+}
