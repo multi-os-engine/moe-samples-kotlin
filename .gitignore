@@ -7,3 +7,10 @@ build
 bin
 xcuserdata/
 project.xcworkspace/
+.gradle/
+build/
+local.properties
+gradle.properties
+LibGDXMissileCommand/ios/xcode/native
+versions.json
+LibGDXMissileCommand/app/libs
