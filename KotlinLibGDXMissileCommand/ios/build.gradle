@@ -1,0 +1,78 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenLocal()
+    }
+    dependencies {
+        classpath group: 'org.multi-os-engine', name: 'moe-gradle', version: '1.3.+'
+    }
+}
+
+apply plugin: 'moe'
+apply plugin: 'kotlin'
+
+configurations { natives }
+
+// Extracts native libs (*.a) from the native-ios.jar and places them
+// under build/libs/ios/.
+task copyNatives << {
+    file("xcode/native/ios/").mkdirs();
+    def LD_FLAGS = "LIBGDX_NATIVES = "
+    configurations.natives.files.each { jar->
+        def outputDir = null
+        if (jar.name.endsWith("natives-ios.jar")) outputDir = file("xcode/native/ios")
+        if (outputDir != null) {
+            FileCollection fileCollection = zipTree(jar)
+            for (File libFile : fileCollection) {
+                if (libFile.getAbsolutePath().endsWith(".a") && !libFile.getAbsolutePath().contains("/tvos/")) {
+                    copy {
+                        from libFile.getAbsolutePath()
+                        into outputDir
+                    }
+                    LD_FLAGS += " -force_load \${SRCROOT}/native/ios/" + libFile.getName()
+                }
+            }
+        }
+    }
+    def outFlags = file("xcode/LibGDXMissileCommand/custom.xcconfig");
+    outFlags.write LD_FLAGS
+
+    def proguard = file("proguard.append.cfg")
+    if (!proguard.exists()) {
+        proguard = new File("proguard.append.cfg")
+        proguard << "\n-keep class com.badlogic.** { *; }\n"
+        proguard << "-keep enum com.badlogic.** { *; }\n"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+    
+	compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    compile project(":common")
+	
+    compile "com.badlogicgames.gdx:gdx-backend-moe:$gdxVersion"
+    natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
+    natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-ios"
+}
+
+moe {
+    xcode {
+        project 'xcode/LibGDXMissileCommand.xcodeproj'
+        mainTarget 'LibGDXMissileCommand'
+        testTarget 'LibGDXMissileCommand-Test'
+    }
+}
+
+// Setup Eclipse
+eclipse {
+    // Set MOE natures and build commands
+    project {
+        natures 'org.multi-os-engine.project'
+    }
+}
+
+moeMainReleaseIphoneosXcodeBuild.dependsOn copyNatives
+moeMainDebugIphoneosXcodeBuild.dependsOn copyNatives
+moeMainReleaseIphonesimulatorXcodeBuild.dependsOn copyNatives
+moeMainDebugIphonesimulatorXcodeBuild.dependsOn copyNatives
