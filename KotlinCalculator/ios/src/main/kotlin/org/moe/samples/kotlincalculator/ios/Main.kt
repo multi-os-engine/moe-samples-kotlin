@@ -42,7 +42,7 @@ class Main protected constructor(peer: Pointer) : NSObject(peer), UIApplicationD
 
     private var window: UIWindow? = null
 
-    override fun applicationDidFinishLaunchingWithOptions(application: UIApplication?, launchOptions: NSDictionary<*, *>?): Boolean {
+    override fun applicationDidFinishLaunchingWithOptions(application: UIApplication?, launchOptions: NSDictionary<String, *>?): Boolean {
         return true
     }
 

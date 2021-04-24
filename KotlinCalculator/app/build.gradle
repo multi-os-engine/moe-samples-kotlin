@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.0.4'
+    ext.kotlin_version = '1.4.32'
     repositories {
         jcenter()
     }
@@ -14,7 +14,6 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "moe.org.kotlincalculator"
