@@ -1,18 +1,24 @@
 buildscript {
     ext.kotlin_version = '1.4.32'
     repositories {
-        jcenter()
+        mavenCentral()
         mavenLocal()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
     }
     dependencies {
         // Multi-OS Engine plugin
-        classpath group: 'org.multi-os-engine.community', name: 'moe-gradle', version: '2.0.0-SNAPSHOT'
+        classpath group: 'org.multi-os-engine', name: 'moe-gradle', version: '2.0.0-SNAPSHOT'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 1, 'seconds'
     }
 }
 
-apply plugin: 'moe'
 apply plugin: 'kotlin'
+apply plugin: 'moe'
 
 dependencies {
     compile fileTree(dir: 'lib', include: '*.jar')
